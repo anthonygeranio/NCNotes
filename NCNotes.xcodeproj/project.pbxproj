@@ -11,7 +11,7 @@
 		923F72FC18B034E200CBB06F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923F72FB18B034E200CBB06F /* UIKit.framework */; };
 		923F72FE18B034E200CBB06F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923F72FD18B034E200CBB06F /* CoreGraphics.framework */; };
 		923F730F18B034E200CBB06F /* NCNotesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923F730E18B034E200CBB06F /* NCNotesController.m */; };
-		9294711318B1697000379E47 /* SpringBoardUIServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9294711218B1697000379E47 /* SpringBoardUIServices.framework */; };
+		92A176EB19217752002A48A0 /* SpringBoardUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A176EA19217752002A48A0 /* SpringBoardUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		923F731D18B034E200CBB06F /* _SBUIWidgetHost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _SBUIWidgetHost.h; sourceTree = "<group>"; };
 		923F731E18B034E200CBB06F /* _SBUIWidgetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _SBUIWidgetViewController.h; sourceTree = "<group>"; };
 		923F731F18B034E200CBB06F /* _SBUIWidgetViewController_Remote_IPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _SBUIWidgetViewController_Remote_IPC.h; sourceTree = "<group>"; };
-		9294711218B1697000379E47 /* SpringBoardUIServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpringBoardUIServices.framework; path = System/Library/Frameworks/SpringBoardUIServices.framework; sourceTree = SDKROOT; };
+		92A176EA19217752002A48A0 /* SpringBoardUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpringBoardUI.framework; path = NCNotes/SpringBoardUI.framework; sourceTree = "<group>"; };
 		92DDEF4A18B0752000559582 /* NCNotesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NCNotesIcon.png; path = Package/Library/PreferenceLoader/Preferences/NCNotesIcon.png; sourceTree = "<group>"; };
 		92DDEF4B18B0752000559582 /* NCNotesIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NCNotesIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/NCNotesIcon@2x.png"; sourceTree = "<group>"; };
 		92DDEF4C18B0758700559582 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9294711318B1697000379E47 /* SpringBoardUIServices.framework in Frameworks */,
+				92A176EB19217752002A48A0 /* SpringBoardUI.framework in Frameworks */,
 				923F72FE18B034E200CBB06F /* CoreGraphics.framework in Frameworks */,
 				923F72FA18B034E200CBB06F /* Foundation.framework in Frameworks */,
 				923F72FC18B034E200CBB06F /* UIKit.framework in Frameworks */,
@@ -73,7 +73,7 @@
 		923F72F818B034E200CBB06F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9294711218B1697000379E47 /* SpringBoardUIServices.framework */,
+				92A176EA19217752002A48A0 /* SpringBoardUI.framework */,
 				923F72F918B034E200CBB06F /* Foundation.framework */,
 				923F72FB18B034E200CBB06F /* UIKit.framework */,
 				923F72FD18B034E200CBB06F /* CoreGraphics.framework */,
@@ -373,6 +373,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Anthony/Downloads/IOS-7-Headers-master/PrivateFrameworks",
+					"$(PROJECT_DIR)/NCNotes",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCNotes/NCNotes-Prefix.pch";
@@ -399,6 +400,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Anthony/Downloads/IOS-7-Headers-master/PrivateFrameworks",
+					"$(PROJECT_DIR)/NCNotes",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCNotes/NCNotes-Prefix.pch";
