@@ -1,0 +1,16 @@
+Package: ASG.NCNotes
+Name: NCNotes
+Version: 1.0-1
+Description: This tweak adds the ability to write, save and share notes right from notification center! 
+Section: Addons (NotificationCenter)
+Depends: firmware (>= 5.0), com.saurik.substrate.safemode, com.chpwn.weeloader
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Anthony Geranio
+dev: @asg on Twitter
+Homepage: www.anthonygeranio.com
+Maintainer:
+Icon: icon.png
+

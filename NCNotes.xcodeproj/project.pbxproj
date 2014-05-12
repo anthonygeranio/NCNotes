@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		923F72FA18B034E200CBB06F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923F72F918B034E200CBB06F /* Foundation.framework */; };
+		923F72FC18B034E200CBB06F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923F72FB18B034E200CBB06F /* UIKit.framework */; };
+		923F72FE18B034E200CBB06F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923F72FD18B034E200CBB06F /* CoreGraphics.framework */; };
+		923F730F18B034E200CBB06F /* NCNotesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923F730E18B034E200CBB06F /* NCNotesController.m */; };
+		9294711318B1697000379E47 /* SpringBoardUIServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9294711218B1697000379E47 /* SpringBoardUIServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		923F72F618B034E200CBB06F /* NCNotes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = NCNotes; sourceTree = BUILT_PRODUCTS_DIR; };
+		923F72F918B034E200CBB06F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		923F72FB18B034E200CBB06F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		923F72FD18B034E200CBB06F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		923F730318B034E200CBB06F /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		923F730518B034E200CBB06F /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		923F730918B034E200CBB06F /* NCNotes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = NCNotes.plist; path = Package/Library/PreferenceLoader/Preferences/NCNotes.plist; sourceTree = "<group>"; };
+		923F730C18B034E200CBB06F /* NCNotes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCNotes-Prefix.pch"; sourceTree = "<group>"; };
+		923F730D18B034E200CBB06F /* NCNotesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCNotesController.h; sourceTree = "<group>"; };
+		923F730E18B034E200CBB06F /* NCNotesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCNotesController.m; sourceTree = "<group>"; };
+		923F731418B034E200CBB06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/NCNotes.bundle/Info.plist; sourceTree = "<group>"; };
+		923F731718B034E200CBB06F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Package/System/Library/WeeAppPlugins/NCNotes.bundle/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		923F731A18B034E200CBB06F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Package/System/Library/WeeAppPlugins/NCNotes.bundle/ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		923F731D18B034E200CBB06F /* _SBUIWidgetHost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _SBUIWidgetHost.h; sourceTree = "<group>"; };
+		923F731E18B034E200CBB06F /* _SBUIWidgetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _SBUIWidgetViewController.h; sourceTree = "<group>"; };
+		923F731F18B034E200CBB06F /* _SBUIWidgetViewController_Remote_IPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _SBUIWidgetViewController_Remote_IPC.h; sourceTree = "<group>"; };
+		9294711218B1697000379E47 /* SpringBoardUIServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpringBoardUIServices.framework; path = System/Library/Frameworks/SpringBoardUIServices.framework; sourceTree = SDKROOT; };
+		92DDEF4A18B0752000559582 /* NCNotesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NCNotesIcon.png; path = Package/Library/PreferenceLoader/Preferences/NCNotesIcon.png; sourceTree = "<group>"; };
+		92DDEF4B18B0752000559582 /* NCNotesIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NCNotesIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/NCNotesIcon@2x.png"; sourceTree = "<group>"; };
+		92DDEF4C18B0758700559582 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		92DDEF4D18B0758700559582 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		923F72F218B034E200CBB06F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9294711318B1697000379E47 /* SpringBoardUIServices.framework in Frameworks */,
+				923F72FE18B034E200CBB06F /* CoreGraphics.framework in Frameworks */,
+				923F72FA18B034E200CBB06F /* Foundation.framework in Frameworks */,
+				923F72FC18B034E200CBB06F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		923F72EC18B034E200CBB06F = {
+			isa = PBXGroup;
+			children = (
+				923F72FF18B034E200CBB06F /* NCNotes */,
+				923F72F818B034E200CBB06F /* Frameworks */,
+				923F72F718B034E200CBB06F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		923F72F718B034E200CBB06F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				923F72F618B034E200CBB06F /* NCNotes */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		923F72F818B034E200CBB06F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9294711218B1697000379E47 /* SpringBoardUIServices.framework */,
+				923F72F918B034E200CBB06F /* Foundation.framework */,
+				923F72FB18B034E200CBB06F /* UIKit.framework */,
+				923F72FD18B034E200CBB06F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		923F72FF18B034E200CBB06F /* NCNotes */ = {
+			isa = PBXGroup;
+			children = (
+				923F730D18B034E200CBB06F /* NCNotesController.h */,
+				923F730E18B034E200CBB06F /* NCNotesController.m */,
+				92DDEF4C18B0758700559582 /* icon.png */,
+				92DDEF4D18B0758700559582 /* icon@2x.png */,
+				923F731D18B034E200CBB06F /* _SBUIWidgetHost.h */,
+				923F731E18B034E200CBB06F /* _SBUIWidgetViewController.h */,
+				923F731F18B034E200CBB06F /* _SBUIWidgetViewController_Remote_IPC.h */,
+				923F730018B034E200CBB06F /* Package */,
+				923F730418B034E200CBB06F /* Supporting Files */,
+			);
+			path = NCNotes;
+			sourceTree = "<group>";
+		};
+		923F730018B034E200CBB06F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				923F730118B034E200CBB06F /* DEBIAN */,
+				923F730618B034E200CBB06F /* Library */,
+				923F731018B034E200CBB06F /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		923F730118B034E200CBB06F /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				923F730318B034E200CBB06F /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		923F730418B034E200CBB06F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				923F730518B034E200CBB06F /* PackageVersion.plist */,
+				923F730C18B034E200CBB06F /* NCNotes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		923F730618B034E200CBB06F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				923F730718B034E200CBB06F /* PreferenceLoader */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		923F730718B034E200CBB06F /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				923F730818B034E200CBB06F /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		923F730818B034E200CBB06F /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				923F730918B034E200CBB06F /* NCNotes.plist */,
+				92DDEF4A18B0752000559582 /* NCNotesIcon.png */,
+				92DDEF4B18B0752000559582 /* NCNotesIcon@2x.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		923F731018B034E200CBB06F /* System */ = {
+			isa = PBXGroup;
+			children = (
+				923F731118B034E200CBB06F /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		923F731118B034E200CBB06F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				923F731218B034E200CBB06F /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		923F731218B034E200CBB06F /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				923F731318B034E200CBB06F /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		923F731318B034E200CBB06F /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				923F731418B034E200CBB06F /* Info.plist */,
+				923F731518B034E200CBB06F /* en.lproj */,
+				923F731818B034E200CBB06F /* ar.lproj */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+		923F731518B034E200CBB06F /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				923F731618B034E200CBB06F /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
+		923F731818B034E200CBB06F /* ar.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				923F731918B034E200CBB06F /* InfoPlist.strings */,
+			);
+			name = ar.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		923F72F318B034E200CBB06F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		923F72F518B034E200CBB06F /* NCNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 923F732218B034E200CBB06F /* Build configuration list for PBXNativeTarget "NCNotes" */;
+			buildPhases = (
+				923F72F118B034E200CBB06F /* Sources */,
+				923F72F218B034E200CBB06F /* Frameworks */,
+				923F72F318B034E200CBB06F /* Headers */,
+				923F72F418B034E200CBB06F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NCNotes;
+			productName = NCNotes;
+			productReference = 923F72F618B034E200CBB06F /* NCNotes */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		923F72ED18B034E200CBB06F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 923F72F018B034E200CBB06F /* Build configuration list for PBXProject "NCNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ar,
+			);
+			mainGroup = 923F72EC18B034E200CBB06F;
+			productRefGroup = 923F72F718B034E200CBB06F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				923F72F518B034E200CBB06F /* NCNotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		923F72F418B034E200CBB06F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		923F72F118B034E200CBB06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				923F730F18B034E200CBB06F /* NCNotesController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		923F731618B034E200CBB06F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				923F731718B034E200CBB06F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		923F731918B034E200CBB06F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				923F731A18B034E200CBB06F /* ar */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		923F732018B034E200CBB06F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		923F732118B034E200CBB06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		923F732318B034E200CBB06F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = NCNotes;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Anthony/Downloads/IOS-7-Headers-master/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NCNotes/NCNotes-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/NCNotes.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.12;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		923F732418B034E200CBB06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = NCNotes;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Anthony/Downloads/IOS-7-Headers-master/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NCNotes/NCNotes-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/NCNotes.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.12;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		923F72F018B034E200CBB06F /* Build configuration list for PBXProject "NCNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				923F732018B034E200CBB06F /* Debug */,
+				923F732118B034E200CBB06F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		923F732218B034E200CBB06F /* Build configuration list for PBXNativeTarget "NCNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				923F732318B034E200CBB06F /* Debug */,
+				923F732418B034E200CBB06F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 923F72ED18B034E200CBB06F /* Project object */;
+}
